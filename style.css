@@ -1,5 +1,5 @@
 html{
-    font-family: sans-serif;
+    font-family: "Roboto", serif;
     box-sizing: border-box;
     font-size: 62.5%;
 }
@@ -12,31 +12,138 @@ html{
 
 body{
     font-size: 1.6rem;
-    background-color: beige;
+    background-color: rgb(183, 220, 235);
+    color:rgb(70, 67, 67)
 }
 
-header, footer {
+header, 
+footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 2rem 12rem;
-    text-transform: uppercase;
     font-weight: 900;
+    text-transform: uppercase;
+}
+
+.nav-content{
+    width: 100%;
+    padding: 2rem;
+    background-color: rgb(70, 67, 67);
+    border-radius: 5rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.main-nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.main-nav a{
+    color: whitesmoke;
+    transition: all 0.7s;
+    text-decoration: none;
+}
+
+.main-nav a:hover{
+    background-color: rgb(183, 220, 235);
+    color: #333;
+    font-weight: 900;
+    padding: 2rem;
+    transition: all 1s;
 }
 
 .container{
-    background-color: rgb(230, 227, 76);
     margin: 5rem 12rem;
     padding: 5rem;
     border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#bio_card{
+    background-color: whitesmoke;
+    width: 600px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bio_title, 
+.bio_subtitle{
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: #333 solid 0.5rem;
 }
 
 .container img{
+    margin-top: 2rem;
     width: 100%;
     border-radius: 1rem;
 }
 
-.animal_description {
-    margin-top: 5rem;
+.bio_description {
+    margin-top: 2rem;
+    padding: 2rem 0;
     line-height: 3rem;
+    text-align: center;
+    border-top: #333 solid 0.5rem;
+    border-bottom: #333 solid 0.5rem;
+}
+
+#layout_card{
+    background-color: rgb(174, 171, 171);
+    width: 600px;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.layout_row{
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.layout_color_row{
+    background-color: rgb(70, 67, 67);
+}
+
+.layout_color_row_mid{
+    background-color: whitesmoke;
+}
+
+.layout_title_color{
+    color: whitesmoke;
+}
+
+.layout_title{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+}
+
+.layout_column{
+    height: 15rem;
+    display: flex;
+    align-items: center;
 }
