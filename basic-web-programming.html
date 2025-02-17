@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/alvis.jpg">
+    <title>Alvis Echeverria</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-content">
+            <ul class="main-nav">
+                <li>
+                    <a href="./index.html">inicio</a>
+                </li>
+                <li>
+                    <a href="#web_presentation_container">acerca de</a>
+                </li>
+                <li>
+                    <a href="#bio_card">contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="web_presentation_container">
+            <h1 class="web_presentation_title">Bienvenidos a mi página</h1>
+            <h2 class="web_presentation_subtitle">
+                Este es mi primer ejercicio
+            </h2>
+            <p>
+                Hola esta es mi primera web del curso de Angular,
+                soy un apasionado del desarrollo frontend, pronto especializado en la librería Three.Js, 
+                espero aprender mucho con ustedes en este curso.
+            </p>
+        </section>
+        <section id="bio_card">
+            <h2 class="bio_title_card">Alvis Echeverria</h2>
+            <img class="img_card" src="./img/alvis.jpg" alt="foto perfil">
+            <p class="bio_description_card">
+                Hola, soy Alvis Echeverria. Tengo 34 años de edad, soy venezolano, vivo en Madrid, 
+                soy un apasionado del desarrollo web, me gusta jugar al fútbol, los videojuegos, el senderismo
+                y la natación.
+            </p>
+            
+            <a class="bio_container_button_card" href="https://alvisecheverria.netlify.app" target="_blank">
+                <button class="bio_button_card">
+                        contactar
+                </button>
+            </a>
+        </section>
+        <section >
+            <div id="layout_card">
+                <ul class="layout_row layout_color_row">
+                    <li>
+                        <h3 class="layout_title_color layout_title">
+                            enlaces
+                        </h3>
+                    </li>
+                    <li class="layout_column">
+                        <a href="https://es.wikipedia.org/wiki/Canis_lupus_signatus" target="_blank">
+                            El lobo iberico
+                        </a>
+                    </li>
+                    <li class="layout_column">
+                        <a href="https://es.wikipedia.org/wiki/Canis_lupus">
+                            El lobo gris
+                        </a>
+                    </li>
+                    <li class="layout_column">
+                        <a href="">
+                            tres
+                        </a>
+                    </li>
+                </ul>
+                <ul class="layout_row layout_color_row_mid">
+                    <li>
+                        <h3 class="layout_title">
+                            contenido
+                        </h3>
+                    </li>
+                    <li class="layout_column">
+                        <p>
+                            El lobo ibérico (Canis lupus signatus) es una subespecie de lobo 
+                            endémica de la península ibérica.
+                        </p> 
+                    </li>
+                    <li class="layout_column">
+                        <p>
+                            El lobo (Canis lupus) es una especie de mamífero placentario 
+                            del orden de los carnívoros.
+                        </p>
+                    </li>
+                    <li class="layout_column">
+                        <p>
+                            El lobo ártico (Canis lupus arctos), también llamado lobo polar o lobo blanco, 
+                            es un mamífero de la familia Canidae, subespecie del lobo.
+                        </p>
+                    </li>
+                </ul>
+                <ul class="layout_row layout_color_row"> 
+                    <li>
+                        <h3 class="layout_title layout_title_color">
+                            redes sociales
+                        </h3>
+                    </li>
+                    <li class="layout_column">
+                        <a href="https://es.wikipedia.org/wiki/Canis_lupus_signatus#/media/Archivo:Iberian_Wolf_AdF_001.jpg" target="_blank">
+                            <img class="social_img" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Iberian_Wolf_AdF_001.jpg" alt="perfil lobo ibérico">
+                        </a>
+                    </li>
+                    <li class="layout_column">
+                        <a href="https://es.wikipedia.org/wiki/Canis_lupus#/media/Archivo:Canis_lupus_265b.jpg" target="_blank">
+                            <img class="social_img" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Canis_lupus_265b.jpg" alt="perfil lobo gris">
+                        </a>
+                    </li>
+                    <li class="layout_column">
+                        <a href="https://es.wikipedia.org/wiki/Canis_lupus_arctos#/media/Archivo:Canis_lupus_arctos_(Pocock,_1935).jpg" target="_blank">
+                            <img class="social_img" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Canis_lupus_arctos_%28Pocock%2C_1935%29.jpg" alt="perfil lobo ártico">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="video_youtube">
+            <h3 class="video_title">
+                aprende angular
+            </h3>
+            <iframe 
+                class="video_youtube_iframe" 
+                src="https://www.youtube.com/embed/xAkS4pnHqRs" 
+                frameborder="0" 
+                allowfullscreen
+            >
+            </iframe>
+        </section>
+        <section>
+            <h2 class="title_video_layout">Paneles de video</h2>
+            <ul class="video_layout">
+                <li class="panel_video">
+                    <iframe 
+                        class="video_youtube_iframe" 
+                        src="https://www.youtube.com/embed/EsMqByk0xYE" 
+                        frameborder="0" 
+                        allowfullscreen
+                    >
+                    </iframe>
+                </li>
+                <li class="panel_video">
+                    <iframe 
+                        class="video_youtube_iframe" 
+                        src="https://www.youtube.com/embed/ff-QlTXSVz8" 
+                        frameborder="0" 
+                        allowfullscreen
+                    >
+                    </iframe>
+                </li>
+                <li class="panel_video">
+                    <iframe 
+                        class="video_youtube_iframe" 
+                        src="https://www.youtube.com/embed/aPNg1E1tJaY" 
+                        frameborder="0" 
+                        allowfullscreen
+                    >
+                    </iframe>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        curso de angular - alvis echeverria
+    </footer>
+</body>
+</html>

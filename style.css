@@ -26,6 +26,15 @@ footer {
     text-transform: uppercase;
 }
 
+.index_container{
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .nav-content{
     width: 100%;
     padding: 2rem;
@@ -59,7 +68,8 @@ footer {
 }
 
 .container{
-    margin: 5rem 12rem;
+    max-width: 1024px;
+    margin: 5rem auto;
     padding: 5rem;
     border-radius: 1rem;
     display: flex;
@@ -68,9 +78,21 @@ footer {
     flex-direction: column;
 }
 
+#web_presentation_container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 5rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
 #bio_card{
     background-color: whitesmoke;
-    width: 600px;
+    width: 80%;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -80,39 +102,73 @@ footer {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.bio_title, 
-.bio_subtitle{
+.bio_title_card, 
+.bio_subtitle_card{
     width: 100%;
     padding: 2rem;
     text-align: center;
     border-bottom: #333 solid 0.5rem;
 }
 
-.container img{
+.img_card{
     margin-top: 2rem;
     width: 100%;
     border-radius: 1rem;
 }
 
-.bio_description {
+.bio_description_card {
     margin-top: 2rem;
     padding: 2rem 0;
     line-height: 3rem;
     text-align: center;
     border-top: #333 solid 0.5rem;
-    border-bottom: #333 solid 0.5rem;
+}
+
+.bio_container_button_card{
+    width: 100%;
+}
+
+.bio_button_card{
+    width: 100%;
+    background-color: #333333de;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.bio_button_card:hover{
+    background-color: #333;
+    transition: all 1s;
+}
+
+.bio_button_card:active{
+    background-color: #292929;
+    transition: all 0.5s;
+    position: relative;
+    top: 0.2rem;
 }
 
 #layout_card{
     background-color: rgb(174, 171, 171);
-    width: 600px;
-    margin-top: 5rem;
+    width: 80%;
+    margin: 5rem auto;
     border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#layout_card ul{
+    list-style: none;
 }
 
 .layout_row{
@@ -132,18 +188,106 @@ footer {
     background-color: whitesmoke;
 }
 
-.layout_title_color{
-    color: whitesmoke;
-}
-
 .layout_title{
     text-transform: uppercase;
     font-size: 1.6rem;
     padding: 0.5rem;
 }
 
+.layout_title_color{
+    color: whitesmoke;
+}
+
 .layout_column{
     height: 15rem;
     display: flex;
     align-items: center;
+}
+
+.layout_column a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.layout_column a:hover{
+    color: wheat;
+}
+
+.social_img{
+    object-fit: contain;
+    height: calc(15rem / 3 * 2);
+    margin: 1rem 0;
+    transition: all 0.5s;
+}
+
+.social_img:hover{
+    background-color: whitesmoke;
+    padding: 1rem;
+    transition: all 0.5s;
+}
+
+#video_youtube{
+    background-color: aliceblue;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.video_title{
+    text-transform: capitalize;
+    text-align: center;
+    padding: 2rem;
+}
+
+.video_youtube_iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+
+.title_video_layout{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.video_layout{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.11%;
+    margin: 0 auto;
+}
+
+.video_layout li{
+    list-style: none;
+}
+
+.panel_video{
+    background-color: whitesmoke;
+    width: 31%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+@media (max-width: 76.8rem ) {
+
+    #layout_card{
+        width: 300px;
+    }
+
+    .layout_row{
+        width: 100%;
+    }
+
+    .video_layout{
+        gap: 2rem;
+    }
+
+    .panel_video{
+        width: 100%;
+    }
 }
